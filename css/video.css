@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*直播*/
+.page-content{background: #F5F5F5;color: #333333;}
+.live-info{height: 80px;margin-bottom: 10px;position: relative;padding: 1px 0 0 95px;font-size: 16px;}
+.t-img{position:absolute;left: 0;top:0;width: 80px;height: 80px;border:1px solid #d4d4d4;border-radius: 5px;background: #ffffff;text-align: center;}
+.live-info h1{font-size: 24px;margin-bottom: 20px;}
+.live-info i,.message-tool i,.groom i,.tool-group button,.tool-group i{display: inline-block;vertical-align: middle;background-image: url(../img/icon_live.png);background-repeat: no-repeat;}
+.live-info i{margin: 0 10px 0 20px;}
+
+.live-info .icon-eyes{background-position:-57px -67px;width: 23px; height: 15px;}
+.live-info .icon-shard{background-position:-111px -55px;width: 18px; height: 18px;}
+.message-tool .icon-emot{width: 16px; height: 16px;background-position:-2px -95px;}
+.message-tool .icon-delete{width: 16px; height: 16px;background-position:-22px -95px;}
+.message-tool .icon-font{width: 16px; height: 16px;background-position:-84px -67px;}
+.message-tool .icon-lock{width: 17px; height: 15px;background-position:-42px -95px;}
+
+.message-tool .icon-emot-y,.message-tool .icon-emot:hover{width: 16px; height: 16px;background-position: -22px -95px;}
+.message-tool .icon-delete-y,.message-tool .icon-delete:hover{width: 16px; height: 16px;background-position: -42px -95px;}
+.message-tool .icon-font-y,.message-tool .icon-font:hover{width: 16px; height: 16px;background-position:-2px -95px;}
+.message-tool .icon-lock-y,.message-tool .icon-lock:hover{width: 17px; height: 15px;background-position: -2px -115px;}
+.groom .icon-tv{width: 23px; height: 26px;background-position:-84px -2px;}
+.groom .icon-live{width: 32px; height: 34px;background-position:-2px -2px;position: absolute;left: 50%;top: 50%;margin-left: -16px;margin-top: -17px;cursor: pointer;}
+.groom .icon-user{width: 11px; height: 13px;background-position:-103px -95px;margin:0 5px ;}
+.groom .icon-eyes-sm{width: 16px; height: 12px;background-position:-111px -77px;}
+.groom .icon-arrow-down{width: 10px; height: 10px;background-position:-118px -95px;margin-left: 10px;}
+.tool-group .icon-play{width: 20px; height: 22px;background-position:-111px -2px;}
+.tool-group .icon-pause{width: 15px; height: 23px;background-position:-111px -28px;}
+.tool-group .icon-volume{width: 23px; height: 21px;background-position:-30px -67px;margin-left: 25px;}
+.tool-group .icon-refresh{width: 26px; height: 22px;background-position:-48px -40px;}
+.tool-group .icon-on{width: 42px; height: 23px;background-position:-38px -2px;}
+.tool-group .icon-off{width: 42px; height: 23px;background-position:-2px -40px;}
+.tool-group .icon-settings{width: 24px; height: 24px;background-position:-2px -67px;}
+.tool-group .icon-screen{width: 23px; height: 23px;background-position:-84px -32px;}
+
+.live-box{height: 630px;}
+.live-video{float: left;width: 840px;height: 100%;position: relative;}
+.live-video video{width: 100%;height: 100%;background: #333333;}
+.tool-group{height: 60px;position: absolute;width: 100%;left: 0;bottom: 0;background: rgba(0,0,0,0.8);padding: 20px;}
+.tool-group button,.tool-group i{cursor: pointer;}
+.tool-group #btn_screen{float: right;}
+.tool-group #btn_settings{position: absolute;top:20px;right: 60px;}
+.tool-group #btn_switch{position: absolute;top:20px;right: 150px;}
+.tool-group #btn_switch:after{position: absolute;right: -40px;content: "弹幕";display: block;top:2px;color: #ffffff;font-size: 14px;}
+.live-message{float: right;width: 340px;height: 100%;background: #ffffff;}
+.live-title{height: 60px;line-height: 60px;color: #ffffff;background: #f28108;font-size: 22px;text-indent: 10px;}
+.live-message ul{height: 455px;padding: 0 10px;font-size: 14px;}
+.live-message ul label{vertical-align: top;color: #f07c00;}
+.live-message li{margin-bottom: 15px;line-height: 30px;}
+.message-input{margin: 0 10px;font-size: 0;}
+.message-input textarea{background: #F5F5F5;border: none;width: 240px;height: 50px;font-size: 14px;outline: none;padding: 7px;vertical-align: middle;resize:none; }
+.message-input button{background: #F28108;color: #FFFFFF;outline: none;border: none;height: 50px;line-height: 50px;vertical-align: middle;width: 80px;text-align: center;font-size: 18px;}
+.message-tool{height: 45px;line-height: 45px;border-top:1px solid #F5F5F5;padding: 0 10px;}
+
+/*直播-推荐视频*/
+.groom,.more-box{width: 840px;}
+.groom-label{margin: 35px 0 20px;font-size: 24px;}
+.groom-label label{margin-left: 5px;vertical-align: middle;margin-top: 2px;}
+.groom-list{background: #ffffff;padding: 30px;}
+.groom-list ul{font-size: 0;margin-left: -8px;}
+.groom-list li{display: inline-block;vertical-align: middle;width: 188px;height: 188px;font-size: 12px;margin-left: 9px;}
+.groom-list li > div{position: relative;width: 100%;height: 148px;margin-bottom: 12px;}
+.groom-list li > div a,.groom-list li > div img{display: block;width: 100%;}
+.groom-list li > div p{position: absolute;bottom: 0;background: rgba(46,46,47,0.8);width: 100%;color: #FFFFFF;height: 20px;line-height: 20px;padding: 0 5px;left: 0;}
+.groom-list li > div em{position: absolute;display: block;width: 31px;height: 18px;line-height: 15px;color: #FFFFFF;font-size: 12px;left: -2px;top:0;background: url(../img/bg_live_flag.png) no-repeat;background-size: 100% auto;text-indent: 3px;}
+.groom-list li:hover{box-shadow:1px 2px 5px #cccccc;}
+.groom-list li > span{display: inline-block;vertical-align: middle;}
+.groom-list li .fr{margin: 0 5px;}
+.groom .icon-eyes-sm{margin:-3px 5px 0}
+.more-box{height: 50px;line-height: 50px;margin: 30px 0 0;background: #FFFFFF;text-align: center;border:1px solid #eeeeee;font-size: 14px;}
