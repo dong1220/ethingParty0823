@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*
+ * PC易聚2.0
+ * 2017.8.23
+ * 活动首页
+ */
+.wrapper{width: 1200px;margin: 0 auto;}
+.top-ad-bar {height: 80px;width: 100%;background: #fcc601;}
+.top-ad-bar img{width: 1200px;}
+.top-header{height: 40px;line-height: 40px;border-bottom: 1px solid #dedede;background: #f5f5f5;}
+.side-nav a{display: inline-block;float: left;padding-right: 20px;color: #333333;}
+.side-nav a:hover{color: #F07C00;}
+.side-nav i{display: inline-block;float:left;margin: 13px 20px 0 0;width: 1px;height: 15px;background: #333333;}
+.center-nav{width: 320px;margin-left: 220px;}
+.center-nav a{display: inline-block;}
+.center-nav a i{display: inline-block;float: left;margin:8px;width: 25px;height: 25px;background: url(../img/icon_nav_s.png) no-repeat;}
+.center-nav a i.icon-dealer{background-position: -25px 0;}
+.center-nav a i.icon-xiang{background-position: -50px 0;}
+.right-content{width: 310px;}
+.city-info i.icon-add{display: inline-block;width: 20px;height: 20px;background: url(../img/icon_add_user.png) no-repeat;margin: 10px 0 0 0;}
+.city-info .btn-group{display: inline-block;margin-left: 3px;color: #333333;}
+.city-info .btn-group:after{display: inline-block;content: ">";transform: rotate(90deg);font-family: "楷体";margin-left: 8px;}
+.login-info{margin: 0 35px;}
