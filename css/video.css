@@ -55,9 +55,9 @@
 .groom,.more-box{width: 840px;}
 .groom-label{margin: 35px 0 20px;font-size: 24px;}
 .groom-label label{margin-left: 5px;vertical-align: middle;margin-top: 2px;}
-.groom-list{background: #ffffff;padding: 30px;}
+.groom-list{background: #ffffff;padding: 30px 30px 10px;}
 .groom-list ul{font-size: 0;margin-left: -8px;}
-.groom-list li{display: inline-block;vertical-align: middle;width: 188px;height: 188px;font-size: 12px;margin-left: 9px;}
+.groom-list li{display: inline-block;vertical-align: middle;width: 188px;height: 188px;font-size: 12px;margin-left: 9px;margin-bottom: 20px;}
 .groom-list li > div{position: relative;width: 100%;height: 148px;margin-bottom: 12px;}
 .groom-list li > div a,.groom-list li > div img{display: block;width: 100%;}
 .groom-list li > div p{position: absolute;bottom: 0;background: rgba(46,46,47,0.8);width: 100%;color: #FFFFFF;height: 20px;line-height: 20px;padding: 0 5px;left: 0;}
