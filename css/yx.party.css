@@ -5,19 +5,33 @@
  * 活动首页
  */
 .wrapper{width: 1200px;margin: 0 auto;}
+.overflow-h{overflow: hidden;}
 .top-ad-bar {height: 80px;width: 100%;background: #fcc601;}
 .top-ad-bar img{width: 1200px;}
 .top-header{height: 40px;line-height: 40px;border-bottom: 1px solid #dedede;background: #f5f5f5;}
 .side-nav a{display: inline-block;float: left;padding-right: 20px;color: #333333;}
 .side-nav a:hover{color: #F07C00;}
 .side-nav i{display: inline-block;float:left;margin: 13px 20px 0 0;width: 1px;height: 15px;background: #333333;}
-.center-nav{width: 320px;margin-left: 220px;}
+.center-nav{width: 320px;margin: 0 130px 0 150px}
 .center-nav a{display: inline-block;}
-.center-nav a i{display: inline-block;float: left;margin:8px;width: 25px;height: 25px;background: url(../img/icon_nav_s.png) no-repeat;}
-.center-nav a i.icon-dealer{background-position: -25px 0;}
-.center-nav a i.icon-xiang{background-position: -50px 0;}
-.right-content{width: 310px;}
-.city-info i.icon-add{display: inline-block;width: 20px;height: 20px;background: url(../img/icon_add_user.png) no-repeat;margin: 10px 0 0 0;}
+.center-nav a i{display: inline-block;float: left;margin:8px;width: 25px;height: 25px;background: url(../img/icon_activity_index.png) no-repeat -95px -10px ;}
+.center-nav a i.icon-dealer{background-position: -120px -10px;}
+.center-nav a i.icon-xiang{background-position: -145px -10px;}
+.right-content{width: 328px;}
+.city-info .icon-add{display: inline-block;width: 20px;height: 20px;background: url(../img/icon_activity_index.png) no-repeat -70px -70px;margin: 10px 0 0 0;}
 .city-info .btn-group{display: inline-block;margin-left: 3px;color: #333333;}
-.city-info .btn-group:after{display: inline-block;content: ">";transform: rotate(90deg);font-family: "楷体";margin-left: 8px;}
-.login-info{margin: 0 35px;}
+.city-info .btn-group:after{display: inline-block;content: ">";transform: rotate(90deg);font-family: "楷体";margin-left: 4px;font-weight: 600;}
+.login-info{margin: 0 25px;}
+.user-info .icon-user{display: inline-block;width: 20px;height: 20px;background: url(../img/icon_activity_index.png) no-repeat -90px -70px;margin: 11px 4px 0 0;}
+.main-meau{padding: 25px 0;border-bottom: 1px solid #ededed;box-shadow: 1px 1px 15px #ededed;}
+.main-meau .meau-list { margin: 6px 75px 0 88px;}
+.main-meau .meau-list a{display: block;float: left;width:110px; height:40px;border: 1px solid #dedede;line-height: 40px;text-align: center;margin-right: 40px;}
+.main-meau .meau-list a:hover,.main-meau .meau-list a.active{
+	background: #F07C00;color: #ffffff;border-color: #F07C00;
+}
+.main-meau .search-box{width: 240px;height: 40px;border: 1px solid #dedede;margin: 6px 0 0 0;}
+.main-meau .search-box input{width: 200px;padding-left: 10px;border: none;font-size: 14px;outline: none;line-height: 38px;}
+.main-meau .search-box .icon-line{display: inline-block;width: 1px;height: 28px;background: #dedede;margin-top: 4px;}
+.main-meau .search-box .icon-search{display: inline-block;width:20px;height: 20px;background: url(../img/icon_activity_index.png) no-repeat -130px -130px;margin: 8px;}
+/*活动内容*/
+.m-content{width: 100%;padding: 20px 0;background: #f5f5f5;}
