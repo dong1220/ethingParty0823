@@ -49,7 +49,7 @@ i.event-price{
 	display: inline-block;
 	width: 335px;
 	height: 60px;
-	background: url(../img/icon-price.png);
+	background: url(../img/icon_activity_details.png) no-repeat -10px -96px;
 	font-size: 36px;
 	color: #fefefe;
 	position: absolute;
@@ -74,10 +74,10 @@ i.event-price span{
 }
 i.event-hot{
 	display: inline-block;
-	width: 56px;
+	width: 64px;
 	height: 38px;
 	line-height: 30px;
-	background: url(../img/icon_img_hot.png);
+	background: url(../img/icon_activity_index.png) no-repeat -11px -12px;
 	position: absolute;
 	top: 12px;
 	left: 0;
@@ -113,11 +113,11 @@ i.event-hot{
 
 i.icon-heart{
 	width: 17px;
-	background: url(../img/icon_collect.png) no-repeat 0 0;
+	background: url(../img/icon_activity_details.png) -693px -96px;
 }
 i.icon-see{
 	width: 22px;
-	background: url(../img/icon_collect.png) no-repeat -18px 0;
+	background: url(../img/icon_activity_details.png) -710px -96px;
 }
 .event-pro-md{
 	float: left;
@@ -143,17 +143,17 @@ i.icon-see{
 	height: 27px;
 }
 i.qq{
-	background: url(../img/icon_share.png) no-repeat 0 0;
+	background: url(../img/icon_activity_details.png) no-repeat -505px -96px;
 }
 i.weixin{
 	width: 28px;
-	background: url(../img/icon_share.png) no-repeat -27px 0;
+	background: url(../img/icon_activity_details.png) no-repeat -532px -96px;
 }
 i.weibo{
-	background: url(../img/icon_share.png) no-repeat -55px 0;
+	background: url(../img/icon_activity_details.png) no-repeat -560px -96px;
 }
 i.signal{
-	background: url(../img/icon_share.png) no-repeat -81px 0;
+	background: url(../img/icon_activity_details.png) no-repeat -586px -96px;
 }
 /*活动价格*/
 .event-pro-rg{
@@ -186,7 +186,7 @@ i.signal{
 	margin-bottom: 10px;
 }
 .chose-price ul li.active{
-	background: url(../img/icon_frame.png);
+	background: url(../img/icon_activity_details.png) -365px  -96px;
 	border: 0;
 }
 .chose-num{
@@ -275,7 +275,7 @@ i.signal{
 /*免费活动*/
 .chose-zero{
 	padding-left: 20px;
-	margin-top: 5px;
+	margin-top: 5;
 	margin-bottom: 43px;
 }
 .chose-zero h2{
@@ -332,11 +332,11 @@ i.signal{
 	margin-top: 75px;
 }
 i.arrow-lf{
-	background: url(../img/icon_arrow.png) no-repeat 0 0;
+	background: url(../img/icon_activity_details.png) no-repeat -71px -176px;
 	float: left;
 }
 i.arrow-rg{
-	background: url(../img/icon_arrow.png) no-repeat -15px 0;
+	background: url(../img/icon_activity_details.png) no-repeat -86px -176px;
 	float: right;
 }
 .more-name ul{
@@ -419,7 +419,7 @@ i.writer-level{
 	display: inline-block;
 	width: 22px;
 	height: 22px;
-	background: url(../img/icon_writer.png) no-repeat 0 0;
+	background: url(../img/icon_activity_details.png) no-repeat -633px -96px;
 	position: absolute;
 	bottom: 0;
     left: 50px;
@@ -428,7 +428,7 @@ i.writer-call{
 	display: inline-block;
 	width: 18px;
 	height: 14px;
-	background: url(../img/icon_writer.png) no-repeat -22px 0;
+	background: url(../img/icon_activity_details.png) no-repeat -655px -96px;
 	margin-right: 8px;
 }
 .event-writer>p{
@@ -581,7 +581,7 @@ i.writer-call{
 	width: 797px;
 	height: 66px;
 	float: right;
-	background: url(../img/icon_frame11.png);
+	background: url(../img/icon_activity_details.png) no-repeat -10px -10px;
 	padding-left: 15px;
 	margin-bottom: 30px;
 }
@@ -740,7 +740,7 @@ span.phone-down i{
 	display: block;
 	width: 17px;
 	height: 33px;
-	background: url(../img/icon_phone_down.png) no-repeat 0 0;
+	background: url(../img/icon_activity_details.png) no-repeat -10px -176px;
 	margin: 0 auto;
 	margin-top: 12px;
 }
@@ -757,7 +757,7 @@ span.up-ward i{
 	display: block;
 	width: 24px;
 	height: 20px;
-	background: url(../img/icon_phone_down.png) no-repeat -17px 0;
+	background: url(../img/icon_activity_details.png) no-repeat -27px -176px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
