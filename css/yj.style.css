@@ -10,6 +10,7 @@
 	float: left;
 	font-size: 14px;
 	line-height: 14px;
+	height: 14px;
 }
 .place li:after{
 	content: ">";
@@ -772,3 +773,456 @@ span.up-ward p{
     width: 880px;
     float: left;
 }
+/*******************************热议首页***************************************************************************************/
+.w-color{
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.w1200{
+	overflow: hidden;
+}
+/*顶部*/
+.hot-top{
+	width: 1200px;
+	height: 410px;
+	padding: 30px 0;
+}
+.hot-top-topic{
+	height: 350px;
+	background-image: url(../img/hot_pic.jpg);
+	text-align: center;
+	color: #fff;
+}
+.hot-top-topic h1{
+	font-size: 30px;
+	line-height: 30px;
+	padding-top: 125px;
+	margin-bottom: 25px;
+}
+.hot-top-topic h6{
+	font-size: 16px;
+	line-height: 16px;
+}
+.theme-lf{
+	width: 900px;
+}
+/*发表话题*/
+.theme-name{
+	font-size: 24px;
+	line-height: 24px;
+	color: #333;
+}
+.theme-name>i{
+	width: 6px;
+	height: 22px;
+	background-color: #F07C00;
+	float: left;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+.write-theme{
+	width: 900px;
+	height: 169px;
+	background-color: #fff;
+	text-align: center;
+	margin-top: 15px;
+	border: 1px solid #dedede;
+}
+.write-theme textarea{
+	width: 860px;
+	height: 89px;
+	border: 1px solid #dedede;
+	resize: none;
+	outline: none;
+	margin-top: 22px;
+	font-size: 12px;
+	padding: 5px 10px;
+}
+.write-theme>p{
+	padding: 10px 20px 0;
+}
+.write-theme>p span{
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+	color: #999;
+	padding: 8px 0;
+	padding-left: 10px;
+}
+.write-theme>p span i{
+	float: left;
+	background: url(../img/icon_hot_home.png) no-repeat -10px -10px;
+	width: 18px;
+	height: 18px; 
+	margin-right: 8px;
+}
+.write-theme>p a{
+	float: right;
+	width: 100px;
+	height: 36px;
+	background: #F07C00;
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+}
+.write-theme>p b{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 36px;
+	color: #666;
+	float: right;
+	margin-right: 20px;
+}
+/*正在热议*/
+.now-theme{
+	margin-top: 35px;
+	overflow: hidden;
+}
+.now-theme>h2 span{
+	margin-left: 15px;
+	display: inline-block;
+	margin-bottom: -2px;
+}
+.now-theme>h2 span a{
+	/*display: inline-block;*/
+	width: 60px;
+	height: 24px;
+	border: 1px solid #999;
+	font-size: 14px;
+	color: #999;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 4px;
+	margin-left: 20px;
+	float: left;
+}
+.now-theme>h2 span a.active{
+	color: #F07C00;
+	border-color: #F07C00;
+}
+.now-theme>h2 ul{
+	overflow: hidden;
+	float: right;
+}
+.now-theme>h2 ul li{
+	float: left;
+	font-size: 12px;
+	line-height: 28px;
+	color: #666;
+	width: 59px;
+	height: 28px;
+	border: 1px solid #DEDEDE;	
+}
+i.icon-list{
+	float: left;
+	width: 12px;
+	height: 10px;
+	background: url(../img/icon_hot_home.png) no-repeat -40px -10px;
+	margin-top: 9px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+i.icon-card{
+	float: left;
+	width: 10px;
+	height: 10px;
+	background: url(../img/icon_hot_home.png) no-repeat -62px -10px;
+	margin-top: 9px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.now-theme>h2 ul li.active{
+	color: #fff;
+	background-color:#666 ;
+}
+.now-theme>h2 ul li.active i.icon-card{
+	background: url(../img/icon_hot_home.png) no-repeat -52px -10px;
+}
+.now-theme>h2 ul li.active i.icon-list{
+	background: url(../img/icon_hot_home.png) no-repeat -28px -10px;
+}
+/*正在热议  卡片版*/
+.theme-card{
+	overflow: hidden;
+	float: left;
+	margin-left: -20px;
+	margin-top: -5px;
+}
+.theme-card li{
+	float: left;
+	width: 440px;
+	height: 380px;
+	background-color: #fff;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.theme-card li img{
+	width: 440px;
+	height: 335px;
+	padding: 10px;
+}
+.theme-card li p{
+	font-size: 16px;
+	line-height: 16px;
+	color: #999;
+	padding: 10px 30px;
+}
+.theme-card li>div{
+	position: absolute;
+    top: 125px;
+    left: 90px;
+    text-align: center;
+}
+.theme-card li>div h2{
+	font-size: 22px;
+	line-height: 22px;
+	color: #fff;
+}
+.theme-card li>div a{
+	display: inline-block;
+	width: 110px;
+	height: 36px;
+	border: 2px solid #fff;
+	background: rgba(255,255,255,0.3);
+	border-radius:5px;
+	color: #fff;
+	text-align: center;
+	line-height: 36px;
+	margin-top: 20px;
+}
+.now-theme>p{
+	width: 900px;
+	height: 50px;
+	background: #fff;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	margin-top: 30px;
+}
+.now-theme>p i{
+	display: inline-block;
+	width: 10px;
+	height: 13px;
+	background: url(../img/icon_zan.png) no-repeat -34px 0;
+	margin-bottom: -5px;
+    margin-left: 10px;
+}
+/*正在热议  列表版*/
+.theme-list{
+	overflow: hidden;
+	margin-top: 5px;
+}
+.theme-list li{
+	overflow: hidden;
+	background-color: #fff;
+	padding: 10px;
+	position: relative;
+	margin-top: 10px;
+}
+.theme-list li img{
+	width: 186px;
+	height: 136px;
+}
+.theme-list li h1{
+	font-size: 24px;
+	line-height: 24px;
+	color: #333;
+}
+.theme-list li h5{
+	width: 407px;
+	height: 50px;
+	font-size: 14px;
+	line-height: 25px;
+	color: #999;
+}
+.theme-list li p{
+	width: 407px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #666;
+}
+.theme-list li a{
+	/*float: right;*/
+	font-size: 20px;
+	line-height: 40px;
+	color: #666;
+	width: 110px;
+	height: 40px;
+	border: 1px solid #DEDEDE;
+	text-align: center;
+	top: 55px;
+    right: 20px;
+}
+i.add-icon{
+	display: inline-block;
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: 14px;
+    height: 1px;
+    background: #666;
+}
+i.reduce-icon{
+	display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 26px;
+    width: 1px;
+    height: 15px;
+    background: #666;	
+}
+.theme-list li a.active{
+	color: #fff;
+	padding-left: 0;
+	background: #F07C00;
+}
+/*发表主题登录*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.theme-login{
+	width: 410px;
+    height: 430px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -205px;
+    margin-top: -215px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px #333333;
+}
+.theme-login>h4{
+	width: 410px;
+	height: 60px;
+	line-height: 60px;
+	background: #f5f5f5;
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #DEDEDE;
+	border-radius: 5px
+}
+.theme-login>h3{
+	line-height: 20px;
+	font-size: 20px;
+	color: #F07C00;
+	padding: 20px 0;
+}
+i.login-close{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: url(../img/icon_hot_home.png) no-repeat -10px -48px;
+	top: -5px;
+    right: -5px;
+    box-shadow: 0 0 10px black;
+}
+.login-msg{
+	/*width: 310px;
+	height: 38px;*/
+	overflow: hidden;
+	display: inline-block;
+	margin-top: 20px;
+}
+.login-msg span{
+	display: inline-block;
+    background: #f5f5f5;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    border: 1px solid #DEDEDE;
+    border-right: none;
+}
+i.msg-name{
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	background: url(../img/icon_hot_home.png) -40px -48px;
+}
+i.msg-pwd{
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	background: url(../img/icon_hot_home.png) -56px -48px;
+}
+.login-msg input{
+	width: 272px;
+	height: 38px;
+	border: 1px solid #DEDEDE;
+	padding-left: 10px;
+	float: left;
+	font-size: 14px;
+}
+.theme-login>h5{
+	font-size: 12px;
+	color: #666;
+	margin: 0 50px;
+	overflow: hidden;
+	padding: 20px 0;
+}
+.theme-login>h5 i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon_hot_home.png) -72px -48px;
+	float: left;
+    margin-top: -3px;
+    margin-right: 10px;
+}
+.theme-login>a{
+	display: inline-block;
+	width: 310px;
+	height: 38px;
+	background: #F07C00;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+}
+.login-icon{
+	margin-top: 38px;
+}
+.login-icon>span{
+	font-size: 14px;
+	color: #666;
+}
+.login-icon>span i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-bottom: -5px;
+	margin-right: 6px;
+}
+i.login-qq{
+	background: url(../img/icon_hot_home.png) no-repeat -38px -25px;
+}
+i.login-weixin{
+	background: url(../img/icon_hot_home.png) no-repeat -58px -25px;
+}
+i.login-weibo{
+	background: url(../img/icon_hot_home.png) no-repeat -78px -25px;
+}
+.login-icon>span b{
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	background: #DEDEDE;
+	margin: 0 10px -2px;
+}
+
+
+
+
+
+
