@@ -1789,23 +1789,92 @@ i.enter-zan{
 .cont-enter-two>ul>li p span{
 	color: #5e9bec;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*******************************大咖列表***************************************************************************************/
+.expert-opt{
+	padding: 30px 0 15px;
+	overflow: hidden;
+}
+.expert-opt>span{
+	font-size: 24px;
+	color: #F07C00;
+}
+.expert-opt>span i{
+	float: left;
+	width: 6px;
+	height: 22px;
+	background: #F07C00;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+.expert-opt>ul{
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 5px;
+}
+.expert-opt>ul li{
+	float: left;
+	border-left: 1px solid #DEDEDE;
+}
+.expert-opt>ul li:first-child{
+	border-left: 0;
+}
+.expert-opt>ul li a{
+	font-size: 16px;
+	color: #333;
+	padding: 0 20px;
+}
+.expert-opt>ul li a:hover{
+	color: #F07C00;
+}
+.expert-list{
+	overflow: hidden;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+.expert-list li{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.expert-list .topic-promoter{
+	width: 224px;
+	height: 300px;
+}
+.expert-list .topic-promoter>i{
+	left: 125px;
+	top: 90px;
+}
+.expert-list .topic-promoter img{
+	width: 70px;
+	height: 70px;
+}
+.expert-list .topic-promoter>h2{
+	margin-top: 20px;
+}
+p.expert-more{
+	width: 1200px;
+	border: 1px solid #EEEEEE;
+}
+/*******************************大咖个人主页***************************************************************************************/
+/*.home-pic{
+	background: url(../img/home_pic.jpg);
+	height: 344px;
+}*/
+/*大咖介紹*/
+.expert-intro {
+	overflow: hidden;
+	margin-top: -100px;
+}
+.expert-intro span{
+	text-align: center;
+	width: 270px;
+}
+.expert-intro span h6{
+	font-size: 14px;
+}
+.expert-intro span h5{
+	font-size: 24px;
+}
 
 
 
