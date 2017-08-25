@@ -838,10 +838,10 @@ span.up-ward p{
 	font-size: 12px;
 	padding: 5px 10px;
 }
-.write-theme>p{
+.enter-rule{
 	padding: 10px 20px 0;
 }
-.write-theme>p span{
+.enter-rule span{
 	float: left;
 	font-size: 12px;
 	line-height: 20px;
@@ -849,14 +849,14 @@ span.up-ward p{
 	padding: 8px 0;
 	padding-left: 10px;
 }
-.write-theme>p span i{
+.enter-rule span i{
 	float: left;
 	background: url(../img/icon_hot_home.png) no-repeat -10px -10px;
 	width: 18px;
 	height: 18px; 
 	margin-right: 8px;
 }
-.write-theme>p a{
+.enter-rule a{
 	float: right;
 	width: 100px;
 	height: 36px;
@@ -865,7 +865,7 @@ span.up-ward p{
 	line-height: 36px;
 	color: #fff;
 }
-.write-theme>p b{
+.enter-rule b{
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 36px;
@@ -991,7 +991,7 @@ i.icon-card{
 	line-height: 36px;
 	margin-top: 20px;
 }
-.now-theme>p{
+.see-more{
 	width: 900px;
 	height: 50px;
 	background: #fff;
@@ -1002,7 +1002,7 @@ i.icon-card{
 	color: #333;
 	margin-top: 30px;
 }
-.now-theme>p i{
+.see-more i{
 	display: inline-block;
 	width: 10px;
 	height: 13px;
@@ -1087,6 +1087,7 @@ i.reduce-icon{
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 15;
 }
 .theme-login{
 	width: 410px;
@@ -1100,6 +1101,7 @@ i.reduce-icon{
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 0 10px #333333;
+    z-index: 16;
 }
 .theme-login>h4{
 	width: 410px;
@@ -1227,9 +1229,43 @@ i.login-weibo{
 .topic-top{
     background: #fff;	
 }
-.topic-top img{
+.pic-big{
+	width: 900px;
+    height: 360px;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.topic-top>img{
 	width: 900px;
 	height: 360px;
+}
+ul.pic-little{
+	overflow: hidden;
+	position: absolute;
+	top: 290px;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+	/*width: 258px;*/
+	/*height: 64px;*/
+	padding: 5px;
+}
+ul.pic-little li{
+	width: 82px;
+	height: 59px;
+	border: 2px solid #000;
+	border-color: rgba(0,0,0,0.3);
+	float: left;
+	overflow: hidden;
+	margin-left: 1px;
+}
+ul.pic-little img{
+	width: 82px;
+	height: 59px;
+}
+.pic-little li.active{
+	border: 2px solid #fff;
 }
 .topic-top-top{
 	top: 50%;
@@ -1262,8 +1298,12 @@ i.login-weibo{
 	padding: 15px 10px 25px;
 }
 /*话题列表*/
-.topic-list li{
+.topic-list>li{
 	overflow: hidden;
+	background: #fff;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	position: relative;
 }
 .list-head img{
 	width: 60px;
@@ -1272,6 +1312,7 @@ i.login-weibo{
 }
 .list-con{
 	margin-left: 20px;
+	margin-bottom: 20px;
 }
 .list-con h3{
 	font-size: 16px;
@@ -1311,8 +1352,479 @@ i.login-weibo{
 .list-foot{
 	overflow: hidden;
 	width: 900px;
+	border-top: 1px solid #F5F5F5;	
 }
 .list-foot li{
 	width: 25%;
 	float: left;
+	text-align: center;
+    border-left: 1px solid #dedede;
+    margin: 10px 0; 
+    padding: 3px 0;
 }
+.list-foot li:first-child{
+	border-left: 0;
+}
+.list-foot li i{
+	display: inline-block;
+	margin-bottom: -2px;
+	margin-right: 10px;
+}
+.list-foot li a{
+	font-size: 14px;
+	color: #666;
+}
+i.foot-comment{
+	width: 18px;
+	height: 16px;
+	background: url(../img/icon_topic_details.png) no-repeat 0 -18px;
+}
+.list-foot li.active i.foot-comment{
+	background: url(../img/icon_topic_details.png) no-repeat 0 0;
+}
+.list-foot li.active a{
+	color: #F07C00;
+}
+i.foot-zan{
+	width: 16px;
+	height: 17px;
+	background: url(../img/icon_topic_details.png) no-repeat -18px -18px;	
+}
+.list-foot li.active i.foot-zan{
+	background: url(../img/icon_topic_details.png) no-repeat -18px -1px;
+}
+i.foot-share{
+	width: 17px;
+	height: 16px;
+	background: url(../img/icon_topic_details.png) no-repeat -35px -19px;
+}
+.list-foot li.active i.foot-share{
+	background: url(../img/icon_topic_details.png) no-repeat -35px -2px;
+}
+i.foot-keep{
+	width: 18px;
+	height: 15px;
+	background: url(../img/icon_topic_details.png) no-repeat -52px -18px;
+}
+.list-foot li.active i.foot-keep{
+	background: url(../img/icon_topic_details.png) no-repeat -52px -1px;
+}
+/*分享图标*/
+.list-share{
+	position: absolute;
+    right: 75px;
+    bottom: 35px;
+    z-index: 10;
+    height: 55px;
+}
+.share-icon{
+	width: 266px;
+	height: 45px;
+	box-shadow: 2px 2px 5px #e1e1e1;
+    /*border: 1px solid #eee;*/
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 8px;
+    background: #fff;
+}
+.share-icon>i{
+	display: inline-block;
+	margin-left: 15px;
+	float: left;
+}
+i.share-qq{
+	width: 26px;
+	height: 31px;
+	background: url(../img/icon_topic_share.png) no-repeat -10px -10px;
+}
+i.share-weixin{
+	width: 30px;
+	height: 31px;
+	background: url(../img/icon_topic_share.png) no-repeat -36px -10px;
+}
+i.share-space{
+	width: 32px;
+	height: 31px;
+	background: url(../img/icon_topic_share.png) no-repeat -66px -10px;
+}
+i.share-friends{
+	width: 29px;
+	height: 31px;
+	background: url(../img/icon_topic_share.png) no-repeat -98px -10px;
+}
+i.share-weibo{
+	width: 32px;
+	height: 28px;
+	background: url(../img/icon_topic_share.png) no-repeat -127px -10px;
+}
+b.share-down{
+	display: inline-block;
+    width: 20px;
+    height: 9px;
+    background: url(../img/icon_topic_share.png) no-repeat -10px -65px;
+    position: absolute;
+    bottom: 1px;
+    left: 11px;
+}
+/*上传图片*/
+.upload-pic{
+	width: 600px;
+    height: 317px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    z-index: 16;
+    margin-left: -300px;
+    border-radius: 5px;
+    
+    box-shadow: 0 0 10px #333333;
+}
+.upload-pic>h4{
+	height: 61px;
+	background: #f5f5f5;
+	line-height: 60px;
+	font-size: 20px;
+	color: #333;
+	border-bottom: 1px solid #DEDEDE;
+	border-radius: 5px;
+	text-align: center;
+}
+.upload-pic>h5{
+	font-size: 12px;
+	color: #999999;
+	padding: 20px;
+}
+.upload-pic>h5 span{
+	color: #F07C00;
+}
+.pic-up{
+	padding: 0 20px 25px;
+	border-bottom: 1px solid #DEDEDE;
+	overflow: hidden;
+}
+.pic-up>li{
+	float: left;
+	margin-right: 23px;
+	position: relative;
+}
+.pic-up>li img,.pic-btn{
+	width: 80px;
+	height: 80px;	
+}
+.pic-btn{
+	border: 1px solid #DEDEDE;
+	display: inline-block;
+	position: relative;
+}
+.pic-btn i{
+	display: inline-block;
+}
+i.btn-add{
+	width: 38px;
+	height: 2px;
+	background: #DEDEDE;
+	position: absolute;
+	top: 39px;
+	left: 21px;
+}
+i.btn-less{
+	width: 2px;
+	height: 38px;
+	background: #DEDEDE;
+	position: absolute;
+	top: 21px;
+	left: 39px;
+}
+.pic-up>li a{
+	font-size: 14px;
+	color: #F07C00;
+	position: absolute;
+	top: 32px;
+    left: 12px;
+}
+i.revise-icon{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icon_topic_share.png) no-repeat -39px -64px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+i.delete-icon{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icon_topic_share.png) no-repeat -51px -64px;
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+.pic-up>li b{
+	font-size: 14px;
+	color: #fff;
+	position: absolute;
+	top: 32px;
+    left: 30px;
+    font-weight: normal;
+}
+.upload-pic>a{
+	display: block;
+	width: 160px;
+	height: 40px;
+	font-size: 16px;
+	background: #F07C00;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	margin: 30px auto 0;
+}
+/*话题发起人*/
+.topic-promoter{
+	width: 280px;
+	height: 360px;
+	background: #fff;
+	text-align: center;
+}
+.topic-promoter img{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin-top: 40px;
+}
+.topic-promoter>i{
+	top: 110px;
+	left: 167px;
+}
+.topic-promoter>h2{
+	font-size: 20px;
+	line-height: 20px;
+	color: #333;
+	margin-top: 30px;
+}
+.topic-promoter>h5{
+	font-size: 16px;
+	line-height: 16px;
+	color: #55a8fc;
+	margin-top: 25px;
+}
+.topic-promoter>a{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+	margin-top: 45px;
+	width: 70px;
+	height: 30px;
+	background: #F07C00;
+}
+/*******************************话题帖子详情***************************************************************************************/
+/*相关话题*/
+.topic-related{
+	width: 280px;
+	height: 310px;
+	background: #fff;
+	/*text-align: center;*/
+	box-shadow: 0 2px 5px #ccc;
+}
+.topic-related>img{
+	width: 260px;
+	height: 195px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.topic-related>h2{
+	font-size: 20px;
+	line-height: 20px;
+	color: #F07C00;
+	text-align: left;
+	/*padding-left: 10px;*/
+	padding: 15px 0 15px 10px;
+}
+.topic-related>a{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #666;
+	border: 1px solid #DEDEDE;
+	text-align: center;
+}
+.topic-related>a i.add-icon{
+	top: 14px;
+    left: 15px;
+}
+.topic-related>a i.reduce-icon{
+	top: 7px;
+    left: 22px;
+}
+.topic-related>span{
+	font-size: 12px;
+	color: #999;
+}
+/*话题帖子详情*/
+.more-color{
+	width: 900px;
+	height: 20px;
+	background: #F5F5F5;
+}
+.enter-comment{
+	padding: 20px 10px 10px;
+}
+.enter-comment>textarea{
+	width: 841px;
+	height: 60px;
+	resize: none;
+	outline: none;
+	border: 1px solid #DEDEDE;
+	font-size: 12px;
+	padding: 5px;
+	margin: 0 20px;
+}
+.enter-rule{
+	overflow: hidden;
+}
+.enter-rule i.enter-look{
+	float: left;
+	background: url(../img/icon_topic_details.png) no-repeat -70px 0;
+	width: 18px;
+	height: 18px; 
+	margin-right: 8px;
+}
+.enter-rule span{
+	margin-right: 5px;
+}
+/*回复评论*/
+.comment-cont{
+	padding: 0 20px 50px 25px;
+}
+.comment-cont>h6,.comment-cont>h6 a{
+	font-size: 12px;
+	color: #666;
+}
+.comment-cont>h6{
+	margin-left: -5px;
+	padding: 20px 0 15px;
+	border-bottom: 1px solid #DEDEDE; 
+}
+.comment-cont>h6 a{
+	margin: 0 5px;
+}
+.comment-cont>h6 a.active{
+	color: #999;
+}
+.comment-cont>ul li{
+	overflow: hidden;
+	margin-top: 20px;
+}
+.cont-photo img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.cont-enter{
+	/*margin-left: 15px;*/
+	width: 805px;
+
+}
+.cont-enter>p{
+	font-size: 12px;
+	color: #666666;
+	line-height: 26px;
+	margin-top: -7px;
+}
+.cont-enter>p span{
+	color: #333;
+}
+.enter-time{
+	font-size: 12px;
+	color: #999;
+	padding-bottom:10px;
+}
+.enter-time b{
+	font-weight: normal;
+	color: #666;
+	overflow: hidden;
+	float: right;
+	padding-top: 2px;
+	margin-left: 18px;
+}
+.enter-time b i{
+	float: left;
+	margin-top: -2px;
+	margin-right: 10px;
+}
+i.enter-reply{
+	width: 19px;
+	height: 15px;
+	background: url(../img/icon_topic_details.png) no-repeat 0 -38px;
+}
+i.enter-zan{
+	width: 14px;
+	height: 15px;
+	background: url(../img/icon_topic_details.png) no-repeat -19px -38px;
+}
+/*二级回复*/
+.cont-enter-two{
+	background: #F5F5F5;
+	padding: 0 10px;
+}
+.cont-enter-two>ul>li{
+	margin-top: 0;
+	border-top: 1px solid #dedede;
+}
+.cont-enter-two>ul li:first-child{
+	border-top: 0;
+}
+.cont-enter-two>ul>li p{
+	font-size: 12px;
+	color: #333;
+	line-height: 26px;
+    padding-top: 7px;
+}
+.cont-enter-two>ul>li p span{
+	color: #5e9bec;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
