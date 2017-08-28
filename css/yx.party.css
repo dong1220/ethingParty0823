@@ -116,6 +116,45 @@ body{background: #f5f5f5;color: #333333;}
 .footer-right{width:300px;}
 .footer-right ul li{width: 150px;float: left;text-align:center;}
 .footer-right p{font-size: 12px;color: #cccccc;}
-/*.footer-right p{font-size:12px;color:#ccc;}
-.footer-right p span{color:#F07C00;font-size:20px;font-weight:bold;}
-.footer-right li span{font-size:12px;color:#ccc;}*/
+
+/*order提交订单 2017.8.26*/
+.order-box .sub-title{font-size: 18px;margin: 20px 0;line-height: 20px;overflow: hidden;}
+.order-box .sub-title i{display: inline-block;width: 5px;height: 18px;background: #F07C00;margin:2px 10px 0 0}
+.order-box .bp-box{padding: 20px;border: 1px solid #dedede; background: #ffffff;}
+.btn-addadd a{display: block;width:110px;height: 30px;line-height: 30px;border: 1px solid #dedede;text-align: center;position: relative;font-size: 14px;}
+
+.order-box .add-box{}
+.add-box .input-box {margin-top: 20px;}
+.add-box .input-box i{color: #f70800;}
+.add-box .input-box input,.add-box .input-box select{width: 300px;height: 33px;line-height: 33px;border: 1px solid #dedede;}
+.add-box .input-box input.input-name{margin-left: 3px;}
+.add-box .input-box span{font-size: 14px;color: #999999;margin-left: 10px;}
+.add-box .input-box select{width: 180px;margin-right: 10px;outline: none;}
+.add-box .input-box textarea{width: 700px;height: 60px;border: 1px solid #dedede;padding: 10px;}
+.add-box .set-defalut{margin: 10px 0 0 110px;font-size: 14px;position: relative;}
+.add-box .set-defalut input,.add-box .set-defalut i{display: inline-block;width: 12px;height: 12px;z-index: 9;position: absolute;top: 0;left: 0;border: 1px solid #ccc;margin: 6px 10px 0 0;}
+.add-box .set-defalut input{z-index: 10;opacity: 0;}
+.add-box .set-defalut input:checked + i{background: url(../img/icon_activity_index.png) no-repeat -73px -104px;border: 1px solid #f70800;}
+.add-box .btn-opearte{width: 100%;text-align: center;margin: 20px auto}
+.add-box .btn-opearte a{display: inline-block;width: 80px;height: 30px;line-height: 30px;text-align: center;background: #F07C00;color: #ffffff;}
+.add-box .btn-opearte a.btn-cancel{background: #e8e8e8;color: #333333;margin-left: 40px;}
+
+.order-box table thead{border: 1px solid #dedede;background: #fafafa;}
+.order-box table tbody{border: 1px solid #dedede;}
+.order-box table td{text-align: center;padding: 20px 0;}
+.order-box table tbody{background: #ffffff;}
+.order-box table tbody td.img-box {text-align: left;}
+.order-box table tbody td.img-box img{display: inline-block;width: 165px;height: 125px;vertical-align: middle;padding-left: 20px;}
+.order-box table tbody a{padding: 0 20px;}
+
+.order-coupon .icon-tis{font-family: "楷体";transform: rotate(-90deg);margin-left: 10px;font-size: 25px;color: #b5b5b5;}
+.order-coupon ul li{width: 210px;height: 125px;float: left;background: url(../img/bg_coupon.png) no-repeat;margin: 0 30px 10px 0;}
+.order-coupon ul li .title{width: 12px;font-size: 12px;;word-wrap:break-word;line-height: 12px; margin: 16px 20px 0;color: #ffffff;}
+.order-coupon ul li h4{color: #f7aa00;font-size: 30px;margin-top: 20px;}
+.order-coupon ul li.active{background-position: 0 -125px;}
+.order-box textarea{width: 100%;height: 20px;font-size: 14px;}
+
+.confirm-price{background: #fafafa;padding: 20px;box-shadow: 1px 1px 5px #ccc;margin: 40px auto 20px;text-align: right;}
+.confirm-price p{font-size: 14px;color: #333333;}
+.confirm-price p span{font-size: 20px;color: #f70800;}
+.submit-order a{display: block;width: 150px;height: 40px;text-align: center;line-height: 40px;font-size: 18px;background: #F07C00;color: #ffffff;}
