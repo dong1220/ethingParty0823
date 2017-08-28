@@ -1797,6 +1797,7 @@ i.enter-zan{
 .expert-opt>span{
 	font-size: 24px;
 	color: #F07C00;
+	line-height: 24px;
 }
 .expert-opt>span i{
 	float: left;
@@ -2109,25 +2110,137 @@ i.other-event{
 i.happened-event{
 	background: #666;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*******************************易响+首页***************************************************************************************/
+/*顶部*/
+.expert-opt>a{
+	font-size: 14px;
+	color: #999;
+	float: right;
+}
+.yxa-top .expert-list .topic-promoter{
+	width: 200px;
+}
+.yxa-top .topic-promoter>h5{
+	color: #666;
+}
+.yxa-top .expert-list{
+	display: inline-block;
+	margin-left: 0;
+}
+.yxa-top .expert-list li.active{
+	box-shadow: 0px 0px 10px #E1E1E1;
+}
+.yxa-top .expert-list li{
+	margin-bottom: 3px;
+}
+.list-box>span{
+	display: inline-block;
+	width: 40px;
+	height: 300px;
+	background: #fff;
+}
+.list-box>span>i{
+	display: inline-block;
+	width: 20px;
+	height: 36px;
+	margin-top: 132px;
+	margin-left: 10px;
+}
+span.btn-lf i{
+	background: url(../img/icon_yx_index.png) no-repeat 0 0;
+}
+span.btn-rg i{
+	background: url(../img/icon_yx_index.png) no-repeat -20px 0;
+}
+.depth-story li{
+	overflow: hidden;
+	padding: 10px;
+	background: #fff;
+	margin-bottom: 15px;
+}
+.depth-story li.active{
+	box-shadow: 0 1px 5px #E1E1E1;
+}
+.depth-story li>img{
+	width: 243px;
+	height: 178px;
+	float: left;
+}
+.story-word{
+	float: left;
+	width: 730px;
+	margin-left: 20px;
+}
+.story-word h2{
+	font-size: 22px;
+	color: #333;
+	line-height: 22px;
+	padding: 10px 0;
+}
+.depth-story li.active .story-word h2{
+	color: #F07C00;
+}
+.story-word>p{
+	font-size: 14px;
+	line-height: 26px;
+	color: #666;
+	padding: 5px 0;
+}
+.story-word>p span{
+	color: #F07C00;
+}
+.story-word h6{
+	font-size: 12px;
+	color: #fff;
+	line-height: 12px;
+}
+.story-word>h6 span{
+	display: inline-block;
+	padding: 4px 7px;
+	background: #ee7c7c;
+	border-radius: 2px;
+}
+.story-word i.icon-l{
+	width: 19px;
+	height: 13px;
+	background: url(../img/icon_yx_index.png) no-repeat -40px -14px;
+}
+.story-word i.icon-p{
+	width: 15px;
+	height: 13px;
+	background: url(../img/icon_yx_index.png) no-repeat -40px 0;
+}
+.story-word i.icon-d{
+	width: 14px;
+	height: 14px;
+	background: url(../img/icon_yx_index.png) no-repeat -55px 0;
+}
+.story-word>span i{
+	display: inline-block;
+	float: left;
+	margin-right: 8px;
+}
+.story-word>span{
+	font-size: 12px;
+	color: #666;
+	margin-right: 20px;
+	margin-top: 35px;
+}
+.batch-more{
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	background: #fff;
+}
+.batch-more i{
+	display: inline-block;
+	width: 14px;
+	height: 13px;
+	background: url(../img/icon_yx_index.png) no-repeat -55px -23px;
+	margin-left: 10px;
+}
 
 
 
