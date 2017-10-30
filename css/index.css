@@ -170,6 +170,12 @@
 	margin-top: 5px;
 	overflow: hidden;
 }
+p.word-ab{
+	display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .column-ad>p>span{
 	font-size: 14px;
 	margin-top: 8px;
@@ -247,7 +253,7 @@ i.column-label{
 }
 .activity-opt{
 	overflow: hidden;
-	padding: 0 10px 10px;
+	padding: 0 10px 11px;
 	margin-left: -15px;
   	margin-top: -5px;
 }
@@ -383,5 +389,47 @@ i.i-level{
     bottom: 5px;
     right: 5px;
 }
+.topic-recommendation{
+	background: #fff;
+	margin-top: 20px;
+}
+.topic-label{
+	padding-bottom: 20px;
+}
+.topic-label>li{
+	padding-left: 12px;
+	margin-top: 20px;
+}
+.topic-label>li>span{
+	display: inline-block;
+	width: 16px;
+  	height: 16px;
+  	background-color: #dedede;
+  	text-align: center;
+  	line-height: 16px;
+  	font-size: 12px;
+  	color: #ffffff;
+  	margin-right: 9px;
+}
+.topic-label>li:nth-child(1)>span,.topic-label>li:nth-child(2)>span,.topic-label>li:nth-child(3)>span{
+	background-color: #F07C00;
+}
+.topic-label>li>a{
+	font-size: 14px;
+  	color: #333333;
+}
+.topic-label>li>a:hover{
+	color: #F07C00;
+}
+
+
+
+
+
+
+
+
+
+
 
 
